@@ -1,8 +1,7 @@
 var seasonDate = "";
 
-fetch("seasondate.txt").then((response) => response.text().then((data) => {
-  seasonDate = data;
-}));
+
+  seasonDate = fetch("seasondate.txt");
 
 console.log(seasonDate);
 
