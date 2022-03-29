@@ -5,6 +5,8 @@ function set_seasonDate(date) {
   seasonDate = date;
 }
 
+console.log(seasonDate);
+
 calculateTimeBetweenDates("2022-06-05");
 
 function calculateTimeBetweenDates(second) {
