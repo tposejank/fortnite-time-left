@@ -1,9 +1,9 @@
 var seasonDate = "";
 
-
-  seasonDate = fetch("seasondate.txt");
-
-console.log(seasonDate);
+fetch("seasondate.txt").then((response) => response.text().then(set_seasonDate));
+function set_seasonDate(date) {
+  seasonDate = date;
+}
 
 calculateTimeBetweenDates("2022-06-05");
 
