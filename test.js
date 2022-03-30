@@ -1,6 +1,6 @@
 var seasonDate = "";
 
-fetch("seasondate.txt").then((response) => response.text().then(set_seasonDate));
+fetch("https://tposejank.github.io/time-left-calculator/seasondate.txt").then((response) => response.text().then(set_seasonDate));
 function set_seasonDate(date) {
   seasonDate = date;
 }
