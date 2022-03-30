@@ -1,0 +1,41 @@
+.idc-box {
+    background: #b5a4d8  repeat scroll 0 0;
+    border: 5px solid  #6037ba;
+    display: table;
+    font-size: 55%;
+    margin-bottom: 1em;
+    padding: 10px;
+    border-radius: 10px;
+    width: auto;
+
+    position: fixed;
+
+    opacity: 0;
+    transition: all 0.1s ease-out;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+.idc-box:hover {
+    opacity: 1;
+    transition: all 0.1s ease-in;
+}
+
+#Progress {
+    width: 100%;    
+    background-color: black;
+    border-radius: 3px;
+  }
+  
+  #progressBar {
+    width: 1%;
+    height: 40px;
+    background-color: orange;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    border-radius: 3px;
+  }

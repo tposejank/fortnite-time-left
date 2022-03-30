@@ -4,13 +4,45 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Cum">
-        <meta name="author" content="Cum">
-        <title>Cum</title>
+        <meta name="description" content="Fortnite season countdown for live streams.">
+        <meta name="author" content="tposejank">
+        <title>Countdown</title>
+
+        <link href="styleshit.css" rel="stylesheet">
     </head>
 
     <body>
-        <a id="day_div"></a>:<a id="hour_div"></a>:<a id="minute_div"></a>:<a id="second_div"></a>
+        <div class="idc-box">
+            <h2>Control panel</h2>
+            <input type="checkbox" id="streamer_mode" onclick="streamerMode()"> Streamer mode <br>
+            <input type="checkbox" id="green_background" onclick="greenBg()"> Green background
+        </div>
+
+        <a id="day_div"></a>
+        <a id="dot1">:</a>
+
+        <a id="hour_div"></a>
+        <a id="dot2">:</a>
+
+        <a id="minute_div"></a>
+        <a id="dot3">:</a>
+
+        <a id="second_div"></a> <br> <br>
+
+        <a id="week_div"></a> <br>
+        <a id="season_percent"></a> <br>
+        <a id="season_remaining"></a> <br>
+
+        <div id="Progress">
+            <div id="progressBar">1%</div>
+        </div> <br>
+
+        Free to use on your live stream. <br>
+
+        <button id="share" onclick="share()">Share</button> <br>
+        <button onclick="taketosettings()">OBS settings</button> <br>
+        <input type="checkbox" id="pagetitlestuff" onclick="pagetitlestuff()"> <a id="pagetitletxt">Stop page title countdown</a> <br>
+
 
         <script src="test.js"></script>
     </body>
